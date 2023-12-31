@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="repository.ziggotv" name="Ziggo TV repository" version="0.9.2" provider-name="Anonymous">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0" />
+        </requires>
+        <extension point="xbmc.addon.repository" name="Ziggo TV repository">
+			<dir>
+                <info compressed="false">https://ziggotv.github.io/ziggotv/addons.xml</info>
+				<checksum>https://ziggotv.github.io/ziggotv/addons.xml.md5</checksum>
+				<datadir zip="true">https://ziggotv.github.io/ziggotv/</datadir>
+				<hashes>true</hashes>
+			</dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Ziggo TV Repository</summary>
+            <description>Ziggo TV Repository</description>
+            <platform>all</platform>
+    </extension>
+</addon><addon id="plugin.video.ziggotv" name="Ziggo TV" version="0.9.2" provider-name="anon">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.31.0" />
+        <import addon="inputstream.adaptive" version="19.0.0" />
+        <import addon="script.module.pycryptodome" version="3.4.3" />
+        <import addon="script.module.inputstreamhelper" version="0.5.7" />
+        <import addon="script.module.pyjwt" version="1.7.1" />
+        <import addon="script.module.web-pdb" version="1.6.2" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="proxyservice.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Watch (Live) TV and content from Ziggo GO (Netherlands)</summary>
+        <summary lang="nl_NL">Bekijk (Live) TV en content van Ziggo GO (Nederland)</summary>
+        <description lang="en_GB">Watch (Live) TV and content from Ziggo GO (Netherlands). Subscription required.</description>
+        <description lang="nl_NL">Bekijk (Live) TV en content van Ziggo GO (Nederland). Abonnement vereist.</description>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+
+</addon></addons>
