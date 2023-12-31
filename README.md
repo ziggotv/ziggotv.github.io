@@ -71,6 +71,10 @@ sudo python3 -m pip install wheel
 sudo python3 -m pip install pycryptodomex
 ```
 
+### Github repository
+
+[Repository](https://github.com/ziggotv)
+
 ### Thanks
 
 -Matt Huisman for his development of the kodi addons that where used as a base for this addon
