@@ -29,7 +29,7 @@
 ### Installation
 Instructions adopted from the kodi wiki, see [HOW-TO:Install add-ons from zip files](https://kodi.wiki/view/HOW-TO:Install_add-ons_from_zip_files)
 
--Step 1: Download the repository.ziggotv ZIP-file from [here](https://ziggotv.github.io/ziggotv/repository.ziggotv/repository.ziggotv-0.9.2.zip)
+-Step 1: Download the repository.ziggotv ZIP-file from [here](https://ziggotv.github.io/ziggotv/repository.ziggotv/repository.ziggotv-1.0.0.zip)
 
 -Step 2: To access the Add-on browser see: [How to access the Add-on browser](https://kodi.wiki/view/Add-on_manager#How_to_access_the_Add-on_browser) or [How to access the Add-on manager](https://kodi.wiki/view/Add-on_manager#How_to_access_the_Add-on_manager)
 
