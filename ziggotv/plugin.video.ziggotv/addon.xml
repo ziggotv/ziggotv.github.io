@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.ziggotv" name="Ziggo TV" version="0.9.5" provider-name="anon">
+<addon id="plugin.video.ziggotv" name="Ziggo TV" version="0.9.6" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.31.0"/>
