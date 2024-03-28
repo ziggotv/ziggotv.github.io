@@ -16,7 +16,7 @@
             <description>Ziggo TV Repository</description>
             <platform>all</platform>
     </extension>
-</addon><addon id="plugin.video.ziggotv" name="Ziggo TV" version="0.9.9" provider-name="anon">
+</addon><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.0" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
