@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.2" provider-name="anon">
+<addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.3" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests"/>
+        <import addon="script.module.requests" version="2.31.0"/>
         <import addon="script.module.pycryptodome" version="3.4.3"/>
         <import addon="inputstream.adaptive" version="20.3.18"/>
-        <import addon="script.module.inputstreamhelper" version="0.5.0+matrix.1"/>
+        <import addon="script.module.inputstreamhelper" version="0.6.1"/>
         <import addon="script.module.pyjwt" version="1.7.1"/>
         <import addon="script.module.web-pdb" version="1.6.2"/>
     </requires>
