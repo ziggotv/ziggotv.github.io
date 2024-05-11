@@ -16,7 +16,7 @@
             <description>Ziggo TV Repository</description>
             <platform>all</platform>
     </extension>
-</addon><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.4" provider-name="anon">
+</addon><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.5" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -40,6 +40,13 @@
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
+        <news>v1.0.5 (2024-05-11)
+- Changed URL's to new ziggo server
+- Adjusted authentication according to new server
+- Adjusted recording api to new server
+- Individual recording of shows cannot be deleted anymore due to changed ziggo api
+- Small modifications to EPG-screen
+- ISA: manifest_type no longer set, header in manifest response now set cfm wiki
+        </news>
     </extension>
-
 </addon></addons>
