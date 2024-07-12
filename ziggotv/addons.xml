@@ -1,22 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="repository.ziggotv" name="Ziggo TV repository" version="1.0.0" provider-name="Anon">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0" />
-        </requires>
-        <extension point="xbmc.addon.repository" name="Ziggo TV repository">
-			<dir>
-                <info compressed="false">https://ziggotv.github.io/ziggotv/addons.xml</info>
-				<checksum>https://ziggotv.github.io/ziggotv/addons.xml.md5</checksum>
-				<datadir zip="true">https://ziggotv.github.io/ziggotv/</datadir>
-				<hashes>true</hashes>
-			</dir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Ziggo TV Repository</summary>
-            <description>Ziggo TV Repository</description>
-            <platform>all</platform>
-    </extension>
-</addon><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.8" provider-name="anon">
+<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.8" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -48,5 +31,22 @@
 - Small modifications to EPG-screen
 - ISA: manifest_type no longer set, header in manifest response now set cfm wiki
         </news>
+    </extension>
+</addon><addon id="repository.ziggotv" name="Ziggo TV repository" version="1.0.0" provider-name="tgiesela">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0" />
+        </requires>
+        <extension point="xbmc.addon.repository" name="Ziggo TV repository">
+			<dir>
+                <info compressed="false">https://ziggotv.github.io/ziggotv/addons.xml</info>
+				<checksum>https://ziggotv.github.io/ziggotv/addons.xml.sha256</checksum>
+				<datadir zip="true">https://ziggotv.github.io/ziggotv/</datadir>
+				<hashes>sha256</hashes>
+			</dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Repository for dutch tv</summary>
+            <description>Ziggo TV repository</description>
+            <platform>all</platform>
     </extension>
 </addon></addons>
