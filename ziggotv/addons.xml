@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.10" provider-name="anon">
+<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.11" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -30,6 +30,10 @@
 - Individual recording of shows cannot be deleted anymore due to changed ziggo api
 - Small modifications to EPG-screen
 - ISA: manifest_type no longer set, header in manifest response now set cfm wiki
+        </news>
+        <news>v1.0.11 (2024-09-27)
+- Fixed issue with switching to other channel without stopping it
+- Implement fall-back to lower-resolution when outside ziggo network
         </news>
     </extension>
 </addon><addon id="repository.ziggotv" name="Ziggo TV repository" version="1.0.0" provider-name="tgiesela">
