@@ -14,12 +14,16 @@ jobs:
 
     steps:
       - name: print names
-        run: echo repository zipfile artifact = ${{ inputs.repo-zipfile }}
+        run: | 
+          echo repository zipfile artifact = ${{ inputs.repo-zipfile }}
+          ls -als 
+          env
 
       - name: checkout
         uses: actions/checkout@v4
         with:
           repository: ziggotv/ziggotv.github.io
+          ref: main
           token: ${{ secrets.ziggotvtoken }}
 
       - uses: actions/download-artifact@v4
