@@ -1,0 +1,41 @@
+on:
+  workflow_call:
+    inputs:
+      repo-zipfile:
+        description: 'name of uploaded artifact'
+        required: true
+        type: string
+
+jobs:
+  submit-zipfiles:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: print names
+        run: echo repository zipfile artifact = ${{ inputs.repo-zipfile }}
+
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          repository: ziggotv/ziggotv.github.io
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: ziggotv
+          name: ${{ inputs.repo-zipfile }}
+
+      - name: remove-older-versions
+        run: |
+          ls -tr ziggotv/plugin.video.ziggotv/*.zip | head -n -2 | xargs rm -f
+          ls -tr ziggotv/plugin.video.ziggotv/*.zip.sha256 | head -n -2 | xargs rm -f
+
+      - name: commit changes
+        run: |
+          git status
+          git add -A
+          git config --global user.name 'workflow [action]'
+          git config --global user.email '<>'
+          git commit -m 'Committed from workflow'
+          git push origin
