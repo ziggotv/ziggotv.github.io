@@ -5,6 +5,9 @@ on:
         description: 'name of uploaded artifact'
         required: true
         type: string
+    secrets:
+      pat-token:
+        required: true 
 
 jobs:
   submit-zipfiles:
@@ -18,7 +21,7 @@ jobs:
         with:
           repository: ziggotv/ziggotv.github.io
           ref: main
-          token: ${{ secrets.ZIGGOTVORGTOKEN }}
+          token: ${{ secrets.pat-token }}
 
       - uses: actions/download-artifact@v4
         with:
