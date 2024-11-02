@@ -18,7 +18,7 @@ jobs:
         with:
           repository: ziggotv/ziggotv.github.io
           ref: main
-          token: ${{ secrets.ZIGGOTVTOKEN }}
+          token: ${{ secrets.ZIGGOTVORGTOKEN }}
 
       - uses: actions/download-artifact@v4
         with:
