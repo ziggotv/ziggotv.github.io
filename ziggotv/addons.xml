@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.12" provider-name="anon">
+<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.13" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -38,6 +38,9 @@
         <news>v1.0.12 (2024-11-09)
 - Fixed issue with list of recordings when adult is allowed
 - Fixed issue with return to previous list for recordings
+        </news>
+        <news>v1.0.13 (2024-11-10)
+- Fixed setting of title when 'title' is absent
         </news>
     </extension>
 </addon><addon id="repository.ziggotv" name="Ziggo TV repository" version="1.0.0" provider-name="tgiesela">
