@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.14" provider-name="anon">
+<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.15" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
         <import addon="script.module.pycryptodome" version="3.4.3" />
         <import addon="inputstream.adaptive" version="20.3.18" />
-        <import addon="script.module.inputstreamhelper" version="0.6.1" />
+        <import addon="script.module.inputstreamhelper" version="0.7.0" />
         <import addon="script.module.pyjwt" version="1.7.1" />
         <import addon="script.module.web-pdb" version="1.6.2" />
     </requires>
@@ -44,6 +44,11 @@
         </news>
         <news>v1.0.14 (2024-12-15)
 - Fixed issue with missing 'trickPlayControl' in recordings
+        </news>
+        <news>v1.0.15 (2025-01-16)
+- Improved error-handling, solved error message b''
+- Set default timers to more realistic values
+- Fix for non-numeric versions of Kodi such as 20.0-ALPHA1
         </news>
     </extension>
 </addon><addon id="repository.ziggotv" name="Ziggo TV repository" version="1.0.0" provider-name="tgiesela">
