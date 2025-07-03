@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.16" provider-name="anon">
+<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.17" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -52,6 +52,9 @@
         </news>
         <news>v1.0.16 (2025-06-05)
 - Fixed issue with missing 'isOttBlackout' in recordings
+        </news>
+        <news>v1.0.17 (2025-07-03)
+- Fixed issue with missing 'fallbackUrl' in streamingInfo
         </news>
     </extension>
 </addon><addon id="repository.ziggotv" name="Ziggo TV repository" version="1.0.0" provider-name="tgiesela">
