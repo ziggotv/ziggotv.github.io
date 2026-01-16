@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="1.0.18" provider-name="anon">
+<addons><addon id="plugin.video.ziggotv" name="Ziggo TV" version="2.0.1" provider-name="anon">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -8,9 +8,10 @@
         <import addon="script.module.inputstreamhelper" version="0.7.0" />
         <import addon="script.module.pyjwt" version="1.7.1" />
         <import addon="script.module.web-pdb" version="1.6.2" />
+	
     </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
+    <extension point="xbmc.python.script" library="addon.py">
+	<provides>video</provides>
     </extension>
     <extension point="xbmc.service" library="proxyservice.py" />
     <extension point="xbmc.addon.metadata">
@@ -23,41 +24,13 @@
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
-        <news>v1.0.5 (2024-05-11)
-- Changed URL's to new ziggo server
-- Adjusted authentication according to new server
-- Adjusted recording api to new server
-- Individual recording of shows cannot be deleted anymore due to changed ziggo api
-- Small modifications to EPG-screen
-- ISA: manifest_type no longer set, header in manifest response now set cfm wiki
-        </news>
-        <news>v1.0.11 (2024-09-27)
-- Fixed issue with switching to other channel without stopping it
-- Implement fall-back to lower-resolution when outside ziggo network
-        </news>
-        <news>v1.0.12 (2024-11-09)
-- Fixed issue with list of recordings when adult is allowed
-- Fixed issue with return to previous list for recordings
-        </news>
-        <news>v1.0.13 (2024-11-10)
-- Fixed setting of title when 'title' is absent
-        </news>
-        <news>v1.0.14 (2024-12-15)
-- Fixed issue with missing 'trickPlayControl' in recordings
-        </news>
-        <news>v1.0.15 (2025-01-16)
-- Improved error-handling, solved error message b''
-- Set default timers to more realistic values
-- Fix for non-numeric versions of Kodi such as 20.0-ALPHA1
-        </news>
-        <news>v1.0.16 (2025-06-05)
-- Fixed issue with missing 'isOttBlackout' in recordings
-        </news>
-        <news>v1.0.17 (2025-07-03)
-- Fixed issue with missing 'fallbackUrl' in streamingInfo
-        </news>
-        <news>v1.0.18 (2025-10-30)
-- Fixed issue with missing 'actualProgramStartOffset' in streamingInfo
+        <news>v2.0.1 (2026-01-13)
+- Changed version 1 to have Kodi look and feel
+- During playing of a channel one can enter numeric keys to switch to another channel
+- Page up/down can be used to switch to next/previous channel
+- Channel list now displays information of the current event
+- Channel overview contains Next item
+- Home screen has a list of last used channels
         </news>
     </extension>
 </addon><addon id="repository.ziggotv" name="Ziggo TV repository" version="1.0.0" provider-name="tgiesela">
